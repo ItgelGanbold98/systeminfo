@@ -3,27 +3,25 @@ import platform
 import os
 import psutil
 
-class info:
-
-    def machine_name(self):
-        print("Machine name: ", socket.gethostname())
+def machine_name():
+    print("Machine name: ", socket.gethostname())
 
 
 
-    def operating_system(self):
-        print("Operating System name: ", platform.uname().system)
-        print("Operating System Version: ", platform.uname().release)
+def operating_system():
+    print("Operating System name: ", platform.uname().system)
+    print("Operating System Version: ", platform.uname().release)
 
 
-    def cpu(self):
-        print("Number of CPU: ", os.cpu_count(), "CPU cores.")
+def cpu():
+    print("Number of CPU: ", os.cpu_count(), "CPU cores.")
 
 
-    def memory(self):
-        print("Total RA-Memory size in bytes: ", psutil.virtual_memory().total)
+def memory():
+    print("Total RA-Memory size in bytes: ", psutil.virtual_memory().total)
 
-    def ip_address(self):
-        print("Machine IP Address: ", socket.gethostbyname(socket.gethostname()))
+def ip_address():
+    print("Machine IP Address: ", socket.gethostbyname(socket.gethostname()))
 
 
 
