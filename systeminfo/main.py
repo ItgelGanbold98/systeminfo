@@ -16,7 +16,7 @@ print("Machine IP Address: ", socket.gethostbyname(socket.gethostname()))
 
 
 import timeit
-import math
+# import math
 import itertools
 
 def bench_pidigits(ndigits = 1000, loops = 100):
