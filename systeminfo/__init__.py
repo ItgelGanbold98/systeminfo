@@ -1,0 +1,1 @@
+from .main import cpu, machine_name, operating_system, memory, ip_address
