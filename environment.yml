@@ -1,0 +1,6 @@
+name: systeminfo
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+prefix: /Users/itgel98/opt/anaconda3/envs/systeminfo
